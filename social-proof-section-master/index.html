@@ -22,6 +22,7 @@
       #landing-page{
         background-color: hsl(0, 0%, 100%);
         font-family: LeagueSpartan;
+        margin: 8rem;
       }
 
       .hero {
@@ -29,7 +30,7 @@
       }
 
       .title {
-        font-size: 30px;
+        font-size: 50px;
         color: hsl(300, 43%, 22%);
         font-weight: 700;
       }
@@ -46,23 +47,40 @@
 
       .user-review-section {
         display: flex;
+        gap: 2rem;
       }
 
       .user-review {
         background-color: hsl(300, 43%, 22%);
-        color: hsl(300, 24%, 96%);;
+        color: hsl(300, 24%, 96%);
+        padding: 2rem;
+        border-radius: 10px;
+        height: 200px;
+      }
+
+      .user-review p {
+        font-size: 18px;
       }
 
       .profile {
         display: flex;
+        align-items: center;
+      }
+
+      .profile-picture {
+        border-radius: 50%;
+        margin-right: 20px;
       }
 
       .name {
         color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        margin-bottom: 0;
       }
 
       .category {
         color: hsl(333, 80%, 67%);
+        margin-top: 0;
       }
     </style>
   </head>
@@ -113,33 +131,33 @@
     <section class="user-review-section">
       <div class="user-review">
         <div class="profile">
-          <img src="images/image-colton.jpg">
+          <img class="profile-picture" src="images/image-colton.jpg" height="40">
           <div>
             <p class="name"> Colton Smith </p>
             <p class="category">Verified Buyer</p>
           </div>
         </div>
-        <p>"We needed the same printed design as the one we had ordered a week prior.Not only did they find the original order, but we also received it in time.Excellent!"</p>
+        <p>" We needed the same printed design as the one we had ordered a week prior.Not only did they find the original order, but we also received it in time.Excellent! "</p>
       </div>
-      <div class="user-review">
+      <div class="user-review" style="margin-top: 20px;">
         <div class="profile">
-          <img src="images/image-irene.jpg">
+          <img class="profile-picture" src="images/image-irene.jpg" height="40">
           <div>
             <p class="name">Irene Roberts </p>
             <p class="category">Verified Buyer</p>
           </div>
         </div>
-        <p>"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+        <p>" Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery. "</p>
       </div>
-      <div class="user-review"> 
+      <div class="user-review" style="margin-top: 40px;"> 
         <div class="profile">
-          <img src="images/image-anne.jpg">
+          <img class="profile-picture" src="images/image-anne.jpg" height="40">
           <div>
             <p class="name">Anne Wallace</p>
             <p class="category">Verified Buyer</p>
           </div>
         </div>
-        <p>"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
+        <p>" Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone! "</p>
       </div>
     </section>
   </body>
